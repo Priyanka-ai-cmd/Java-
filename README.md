@@ -120,19 +120,27 @@ The Stack class extends Vector and provides additional functionality for stack o
 The Stack class can be considered as a subclass of Vector because it inherits all of its methods and properties.
 
 // Java Program Implementing Stack Class
+
 import java.util.Stack;
+
 public class Geeks 
+
 {
+
     public static void main(String[] args) 
+    
     {
         // Create a new stack
+    
         Stack<Integer> s = new Stack<>();
+        
         // Push elements onto the stack
         s.push(1);
         s.push(2);
         s.push(3);
         s.push(4);
         // Pop elements from the stack
+        
         while(!s.isEmpty()) {
             System.out.println(s.pop());
         }
@@ -151,6 +159,7 @@ Key Features of Vector:
 5.It implements List, RandomAccess, Cloneable, and Serializable.
 
 Vector Class Declaration
+
 public class Vector<E> extends AbstractList<E> implements List<E>, RandomAccess, Cloneable, Serializable
 
 Here, E is the type of element.
