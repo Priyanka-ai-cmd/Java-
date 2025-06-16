@@ -222,13 +222,17 @@ list.remove("apple");  // removes "apple" from list
 list.remove(0);       // removes the first element
 
 #### Question 73: What is the difference between "ArrayList" and "LinkedList"?
+
 ArrayList:
+
 Underlying Structure: Dynamic array (resizable array). 
 Random Access: Fast (O(1)) due to direct indexing into the array. 
 Insertions/Deletions: Slower (O(n)) if elements need to be shifted after an insertion or removal in the middle. 
 Memory Usage: May be slightly less memory overhead due to the simple array structure. 
 Suitable for: Scenarios where random access is frequent and insertions/deletions are infrequent. 
+
 LinkedList:
+
 Underlying Structure: Doubly linked list (each element points to the next and previous element). 
 Random Access: Slower (O(n)) because you have to traverse from the beginning. 
 Insertions/Deletions: Fast (O(1)) because only pointers need to be updated. 
@@ -238,7 +242,9 @@ Suitable for: Scenarios where frequent insertions/deletions are required, especi
 https://rameshfadatare.medium.com/difference-between-arraylist-and-linkedlist-in-java-ea609090c361
 
 #### Question 72: How do you iterate over a "List"?
+
 List<String> list = Arrays.asList("apple", "banana", "cherry");
+
 for(String fruit : list) {
     System.out.println(fruit);
 }
