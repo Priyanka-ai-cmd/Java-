@@ -5,11 +5,15 @@
 Answer: Generics provide type safety. They ensure that you insert only the specified type of objects into your list. This reduces bugs and eliminates the need for typecasting.
 
 When retrieving values from a generic List, you don't need to cast them.
+
 List<String> names = new ArrayList<>();
+
 String name = names.get(0);  // ✅ No cast needed
+
 Without generics:
 
 List names = new ArrayList();
+
 String name = (String) names.get(0);  // ❗ Must cast
 
 #### Question 79: How can you synchronize a "List"?
